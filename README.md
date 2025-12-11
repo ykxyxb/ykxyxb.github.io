@@ -1,2 +1,1 @@
-# ykxyxb.github.io
-my resume website
+# my resume website
