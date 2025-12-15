@@ -160,6 +160,51 @@
     .papers {
       list-style: none;
     }
+    .basic-info-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .basic-info-list .list-card {
+      position: relative;
+      padding-left: 32px;
+    }
+    .basic-info-list .list-card::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), #6aa4ff);
+    }
+    .basic-info-list li:not(.list-card) {
+      position: relative;
+      padding-left: 32px;
+      list-style: none;
+    }
+    .basic-info-list li:not(.list-card)::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), #6aa4ff);
+    }
+    .list-card ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 8px;
+    }
+    .list-card ul li {
+      list-style: none;
+      color: #333;
+      margin-bottom: 4px;
+    }
     .paper {
       background: #f9fafb;
       padding: 14px 16px;
@@ -206,7 +251,6 @@
     }
     .list-card {
       background: #f9fafb;
-      border-left: 3px solid var(--primary);
       padding: 12px 14px;
       border-radius: 8px;
       box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
@@ -322,11 +366,11 @@
       <div class="column">
         <section class="reveal">
           <h2>📌 基本信息</h2>
-          <ul>
-            <li>出生年月：1993年04月</li>
-            <li>现职称：住院医师</li>
-            <li>专业方向：肿瘤学（专业型，肿瘤内科）</li>
-            <li>资格证书：医师资格证、执业医师证、住院医师规培证、GCP、CET-6</li>
+          <ul class="basic-info-list">
+            <li class="list-card">出生年月：1993年04月</li>
+            <li class="list-card">现职称：住院医师</li>
+            <li class="list-card">专业方向：肿瘤学（专业型，肿瘤内科）</li>
+            <li class="list-card">资格证书：医师资格证、执业医师证、住院医师规培证、GCP、CET-6</li>
           </ul>
         </section>
 
@@ -407,7 +451,7 @@
 
         <section class="reveal">
           <h2>🏆 获奖情况</h2>
-          <ul>
+          <ul class="basic-info-list">
             <li class="list-card">博士：校三等奖学金</li>
             <li class="list-card">硕士：校优秀毕业生、校三好学生</li>
             <li class="list-card">本科：校二等奖学金</li>
@@ -441,9 +485,9 @@
             <li class="list-card"><strong>临床素养</strong>：完成住院医师规范化培训，2年三甲医院肿瘤科临床经验，知识扎实</li>
             <li class="list-card"><strong>科研素养</strong>：
               <ul>
-                <li>熟悉多种分子生物学实验技术（包括ATAC-seq、CUT&Tag自建库等）</li>
-                <li>熟练掌握多组学（bulk RNAseq、scRNAseq、空间转录组、ATAC-seq、CUT&Tag等）上下游分析流程</li>
-                <li>具备独立完成“生物信息学分析→湿实验→网页展示”闭环研究能力</li>
+                <li>• 熟悉多种分子生物学实验技术（包括ATAC-seq、CUT&Tag自建库等）</li>
+                <li>• 熟练掌握多组学（bulk RNAseq、scRNAseq、空间转录组、ATAC-seq、CUT&Tag等）上下游分析流程</li>
+                <li>• 具备独立完成“生物信息学分析→湿实验→网页展示”闭环研究能力</li>
               </ul>
             </li>
           </ul>
